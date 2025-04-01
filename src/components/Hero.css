@@ -6,9 +6,8 @@
 
 .container {
     max-width: 1240px;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     margin: auto;
-
 }
 
 .hero .content {
@@ -16,7 +15,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.col-1{
+.col-1 {
     padding: 1rem 1rem 1rem 0;
     height: 70vh;
     display: flex;
@@ -24,26 +23,45 @@
     justify-content: center;
 }
 
-.col-1 h1{
-    font-size: 3rem;
+.col-1 h1 {
+    font-size: 3rem; 
     font-weight: 700;
     color: var(--white);
-
 }
 
-.col-1 p{
+.col-1 p {
     font-size: 1rem;
     color: var(--white);
-    line-height:  1.4;
-    margin-top: 1.2 rem;
-
+    line-height: 1.4;
+    margin-top: 1.2rem;
 }
 
-.col-1 .used-by p{
+.col-1 .used-by p {
     color: var(--lightgrey);
     font-size: .7rem;
     margin: 2rem 0 1rem 0;
 }
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--white);
+    align-items: start; 
+    cursor: pointer;
+}
+
+.icons span {
+    padding: 2px 10px 0px 2px;
+    opacity: 50%;
+    border-radius: 6px;
+}
+
+.icons span:hover {
+    opacity: 80%;
+    
+}
+
 
 .col-2 {
     padding: 1rem;
@@ -54,14 +72,14 @@
     font-size: .8rem;
 }
 
-.col-2 p{
+.col-2 p {
     color: var(--grey);
 }
 
 .form-layout {
     width: 400px;
     margin: auto;
-    background-color:  var(--white);
+    background-color: var(--white);
     border-radius: 6px;
 }
 
@@ -73,25 +91,40 @@
     margin-bottom: 10px;
 }
 
-.social-login span {
-    background: var(--white);
-    padding: 16px 45px 6px 45px;
-    border: 1px solid var(--lightgrey);
-    border-radius: 4px;
+.social-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 1px 1px;
+    background-color: var(--white);
+    
 }
 
-.col-2 .divider p{
+.social-login span {
+    padding: 10px 43px 10px 43px;
+    border: 1px solid var(--lightgrey);
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.social-login span:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.col-2 .divider p {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--lightgrey);
     line-height: 0.1em;
-    margin: 2rem 0 2rem;
+    margin: 1.5rem 0 1.5rem;
 }
-
 .col-2 .divider p span {
-    background:  var(--white);
+    background: var(--white);
     padding: 0 10px;
 }
+
 
 form input {
     display: block;
@@ -101,4 +134,64 @@ form input {
     border: 1px solid var(--lightgrey);
     background: var(--white);
     border-radius: 4px;
+}
+
+.form-footer {
+    border-top: 1px solid var(--lightgrey);
+    background: var(--white);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-footer p {
+    padding: 1.5rem 2rem;
+}
+
+.form-footer span {
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+
+@media screen and (max-width:940px) {
+    .hero {
+        height: auto;
+        width: 100%;
+    }
+
+    .hero .container {
+        padding: 0 1rem;
+    }
+
+    .hero .content {
+        grid-template-columns: 1fr;
+    }
+
+    .col-1 {
+        height: 90vh; 
+        padding: .2rem;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .col-2 {
+        display: none;
+    }
 }

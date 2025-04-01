@@ -17,7 +17,7 @@ const Hero = () => {
                     <div className='used-by'>
                         <p> USED BY</p>
                         <div className='icons'>
-                            <span> <FaDatabase /> Staxx </span>
+                            <span> <FaDatabase />  Staxx </span>
                             <span> <FaAsterisk/> Star AI </span>
                             <span> <FaAccusoft /> Accusoft </span>
                         </div>
@@ -29,24 +29,23 @@ const Hero = () => {
                             <div className='form-container'>
                                 <p className='sign-in-txt'> Sign in With</p>
                                 <div className='social-login'>
-                                <span> <FaFacebook size={20}/> Staxx </span>
-                                <span> <FaTwitter size={20}/> Star AI </span>
-                                <span> <FaGithub size={20}/> Accusoft </span>
+                                    <span> <FaFacebook size={20}/> </span>
+                                    <span> <FaTwitter size={20}/> </span>
+                                    <span> <FaGithub size={20}/> </span>
                                 </div>
                             <div className='divider'>
                                 <p><span>Or</span></p>
                             </div>
-                            <form action="">
+                            <form action=''>
                                 <input type="text" placeholder='Name' />
                                 <input type="text" placeholder='Email' />
                                 <input type="text" placeholder='Password' />
-                                <button> Create your Account</button>
+                                <button> Create your Account </button>
                             </form>
                             </div>
                             <div className='form-footer'>
-                                <p>
-                                     By signing up, you agree to our
-                                     <span className='primary-color'> Terms, Data Policy</span> and <span className='primary-color'> Cookies Policy </span>
+                                <p> By signing up, you agree to our
+                                <span className='primary-color'> Terms, Data Policy</span> and <span className='primary-color'> Cookies Policy </span>
                                 </p>
                             </div>
                         </div>
